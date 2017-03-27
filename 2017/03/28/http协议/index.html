@@ -87,16 +87,56 @@
 
 
 
-<meta name="description" content="2222222">
+<meta name="description" content="http协议介绍
+http请求
+http响应
+https
+
+
+
+ http是什么？    HTTP 是基于 TCP/IP 协议的应用层协议。（HyperText Transfer Protocol）主要规定了客户端和服务器之间的通信格式，默认使用80端口; 目前使用最多的http协议最多的还是1.1版本；
+  http特点：
+无状态协议
+   应用层协议   传输明文内容安全性较差
+  htt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="http协议">
 <meta property="og:url" content="http://yoursite.com/2017/03/28/http协议/index.html">
 <meta property="og:site_name" content="Alonestray's Blog">
-<meta property="og:description" content="2222222">
-<meta property="og:updated_time" content="2017-03-27T16:28:01.292Z">
+<meta property="og:description" content="http协议介绍
+http请求
+http响应
+https
+
+
+
+ http是什么？    HTTP 是基于 TCP/IP 协议的应用层协议。（HyperText Transfer Protocol）主要规定了客户端和服务器之间的通信格式，默认使用80端口; 目前使用最多的http协议最多的还是1.1版本；
+  http特点：
+无状态协议
+   应用层协议   传输明文内容安全性较差
+  htt">
+<meta property="og:image" content="http://onh2iwmix.bkt.clouddn.com/001.jpg">
+<meta property="og:image" content="http://onh2iwmix.bkt.clouddn.com/002.jpg">
+<meta property="og:image" content="http://onh2iwmix.bkt.clouddn.com/003.jpg">
+<meta property="og:image" content="http://onh2iwmix.bkt.clouddn.com/004.jpg">
+<meta property="og:image" content="http://onh2iwmix.bkt.clouddn.com/005.jpg">
+<meta property="og:image" content="http://onh2iwmix.bkt.clouddn.com/006.jpg">
+<meta property="og:updated_time" content="2017-03-27T16:38:55.819Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="http协议">
-<meta name="twitter:description" content="2222222">
+<meta name="twitter:description" content="http协议介绍
+http请求
+http响应
+https
+
+
+
+ http是什么？    HTTP 是基于 TCP/IP 协议的应用层协议。（HyperText Transfer Protocol）主要规定了客户端和服务器之间的通信格式，默认使用80端口; 目前使用最多的http协议最多的还是1.1版本；
+  http特点：
+无状态协议
+   应用层协议   传输明文内容安全性较差
+  htt">
+<meta name="twitter:image" content="http://onh2iwmix.bkt.clouddn.com/001.jpg">
 
 
 
@@ -331,7 +371,43 @@
       
 
       
-        <p>2222222</p>
+        <hr>
+<ul>
+<li>http协议介绍</li>
+<li>http请求</li>
+<li>http响应</li>
+<li><p>https</p>
+<p><img src="http://onh2iwmix.bkt.clouddn.com/001.jpg" alt="enter image description here"></p>
+</li>
+</ul>
+<p> <strong>http是什么？</strong><br>    HTTP 是基于 TCP/IP 协议的应用层协议。（HyperText Transfer Protocol）主要规定了客户端和服务器之间的通信格式，默认使用80端口; 目前使用最多的http协议最多的还是1.1版本；</p>
+<p>  <strong>http特点：</strong></p>
+<pre><code>无状态协议
+</code></pre><p>   应用层协议<br>   传输明文内容安全性较差</p>
+<p>  <strong>http 1.1 缺点</strong></p>
+<pre><code>虽然1.1版允许复用TCP连接，但是同一个TCP连接里面，所有的数据通信是按次序进行的。服务器只有处理完一个回应，才会进行下一个回应。要是前面的回应特别慢，后面就会有许多请求排队等着。
+</code></pre><p>   为了避免这个问题，只有两种方法：一是减少请求数，二是同时多开持久连接。这导致了很多的网页优化技巧，比如合并脚本和样式表、将图片嵌入CSS代码、域名分片等等。如果HTTP协议设计得更好一些，这些额外的工作是可以避免的。</p>
+<p>   <strong>http请求&amp;响应</strong></p>
+<p>   http请求：get/post方式<br>   主要：请求头信息各个参数&amp;响应参数<br>  http状态码：1，2，3开头代表成功   4请求错误    5服务器错误</p>
+<hr>
+<p><strong>对https的了解</strong></p>
+<ul>
+<li>http不安全（明文传输）https安全（加密传输）</li>
+<li>在OSI网络模型中，http工作于应用层，https工作在传输层</li>
+<li><p>http标准端口80  http端口443</p>
+<pre><code>http---&gt;https 图解
+</code></pre><p><img src="http://onh2iwmix.bkt.clouddn.com/002.jpg" alt="enter image description here">     </p>
+<p>ps：http通信使用明文,内容可能被窃听;</p>
+<p><img src="http://onh2iwmix.bkt.clouddn.com/003.jpg" alt="enter image description here"></p>
+<p>ps:http不验证通信方身份,因此有可能遭遇伪装;</p>
+<p><img src="http://onh2iwmix.bkt.clouddn.com/004.jpg" alt="enter image description here"></p>
+<p>ps:无法验证报文的完整性,所有有可能已篡改;</p>
+<p><img src="http://onh2iwmix.bkt.clouddn.com/005.jpg" alt="enter image description here"></p>
+<p>ps:HTTP + 加密 + 认证 + 完整性保护 = HTTPS</p>
+</li>
+</ul>
+<p>HTTPS是身披SSL外壳的HTTP,通常情况下HTTP是直接和TCP层进行通信的。当使用SSL(安全套阶字)时,则演变成HTTP先和SSL通信,SSL再和TCP通信的了。<br><img src="http://onh2iwmix.bkt.clouddn.com/006.jpg" alt="enter image description here"></p>
+<p>参考@ 阮一峰  &amp; 何小伟；用于自己学习</p>
 
       
     </div>
